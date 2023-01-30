@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navigation_bar">
+        <a href = "index.html">Home</a>
+        <a href = "about_me.html">About Me</a>
+        <a href = "resume.html">Resume</a>
+        <a href = "projects.html">Projects</a>
+        <a href = "coursework.html">Coursework</a>
+        <a href = "goals.html">Goals</a>
+    </div>
+
+    <div class = "text_starting_point" style = "margin-left: 20px; margin-right:20px">
+        <h1 style = "font-size:50px">Personal Website (Present)</h1>
+            <p style = "font-size: 25px; text-align: justify">
+                This website serves as a static portfolio created using HTML and CSS. My intention is the upgrade the website as I work through
+                The Odin Project to implement more HTML, CSS and Javascript features while also fixing issues such as resizing. 
+                <a href = "#">Click here to see the code repository.</a>
+            </p>
+        <h1 style = "font-size:50px">20/20/20 Rule Vision Project (Fall 2022 - Present)</h1>
+            <img src = "images/20-20-20_Project_Screenshot.png"/>
+            <p style = "font-size: 25px">
+                This is a project that I began just prior to the 2022 Fall semester to help with eye strain using Python. A well known rule is that for every
+                20  minutes of screen time, there should be a 20 second break to look at a target that is at least 20 feet away which helps lower eye
+                fatigue. The easy solution would be to simply create a program which utlizes a timer and a pop-up window to notify the user to take
+                a break. However, this is not good for work flow as most people tend to get up, stretch, walk around and use the bathroom every now
+                and then which fulfills the 20-20-20 rule. As a result, implementing this rule all the time is inefficient. This program uses OpenCV
+                to detect when the user is directly looking at the screen for 20 consecutive minutes. If the person is not looking at the screen, or
+                is away from the computer for a set amount of time, the streak is broken. The image above shows the facial detection when I cover
+                the screen with my finger. The window on the left shows a GUI made using Tkinter.I plan on reformatting this project with more 
+                functions to make it more modular and clean. I have yet to implement the timers. Furthurmore, I intend to use this as a work log to
+                track my working habits. <a href = "https://github.com/PKC42/20-20-20-Project.git">Click here to see the code repository.</a>
+            </p>
+        <h1 style = "font-size:50px">Secure Drop (Fall 2022)</h1>    
+            <img src = "Images/SecureDrop_Screenshot.PNG"/>
+            <p style = "font-size: 25px">
+                SecureDrop was a project that was conducted during the Introduction to Computer Security course which I took in Fall 2022. My team 
+                consisted of 3 people (myself included). In this project, we designed a secure file transfer system using concepts we learned in class.
+                To do this, we hid passwords using password hashes and generated certificates and a certificate authority using EasyRSA. These certificates
+                along with the certifcate authority would be used to verify clients while also encrypting and transfering files using TCP and an SSL wrapper.
+                Ultimately, we were unsucessful in fully completing the program. This was due to our testing and development system which consisted of 
+                4 separate docker containers with a specific port exposed to simulate individual clients. We were unable to successfully create a TCP connection
+                with SSL wrappers using the generated certificates between these containers. The above shows user shows user registration and client addition
+                which utlizes .json files as a database along with password hashing and regular expressions to ensure that the names, emails and passwords
+                are properly formatted and are of proper length. <a href = "https://github.com/PKC42/SecureDrop.git">Click here to see the code repository.</a>
+            </p>
+        <h1 style = "font-size:50px">EECE Capstone Project (Fall 2021 - Spring 2022)</h1>
+            <p style = "font-size: 25px">
+                This project was conducted over the course of 2 semesters is a group of 4. The objective was to create a spoon that can help disabled individuals
+                pace themselves while eating to prevent choking with the goal of increasing independence for disabled individuals. In order to fulfil this,
+                a spoon was designed using CAD, 3D printed using clear plastic and mounted on a metal spoon. A printed circuit board (PCB) was designed to
+                control several LEDs and an accelerometer to make the spoon glow to notify the user to either put down the spoon, chew or take another bite.
+                A full PDF of the Final Report can be found below with the design specifications and outcomes.
+            </p>
+        <embed src="Capstone Project Final Report NEEDs Programmable Spoon Team 21-018.pdf" width = "1000" height = "1000" type="application/pdf">
+
+        <h1 style = "font-size:50px">N-Body Simulation (Spring 2022)</h1>
+            <video width="700" height="700" controls>
+            <source src="Images/N_Body_Vid.mp4" type="video/mp4">
+            </video>
+            <p style = "font-size: 25px">
+                This was a project that was completed in the Computing IV course at UMass Lowell. It involves using physics formulas, mass, acceleration
+                and velocity to create an animation using the Simple and Fast Multimedia Library (SFML) in C++. This project utilized a celestial body 
+                class and a universe class with the universe class inheriting from the celestial bodies class. The celestial bodies class contained information
+                on each celestial body ranging from mass, acceleration, velocity and .gif file while the universe class stored each celestial body using a 
+                vector and smart pointers. The result of the animation can be seen in the clip above. <a href = "https://github.com/PKC42/N-Body-Simulation.git">Click here to see the code repository.</a>
+            </p>
+            
+        <h1 style = "font-size:50px">PhotoMagic (Spring 2022)</h1>
+            <img src = "Images/PhotoMagic_Screenshot.PNG"/>
+            <p style = "font-size: 25px">
+                This was a fun project which was completed during the Computing IV course at Umass Lowell. This project was written in C++ and utilized
+                the Simple and Fast Multimedia Library (SFML). The goal of this project was to use a simulated Linear Feedback Shift Register (LFSR) to change 
+                the pixels of an image given a seed value. By using this seed value, the encrypted image can also be decrypted. The encrytion input and result
+                can be seen above. <a href = "https://github.com/PKC42/PhotoMagic.git">Click here to see the code repository.</a>
+            </p>
+        
+        <h1 style = "font-size:50px">Triangle Fractals (Spring 2022)</h1>
+            <img src = "Images/Triangle_Fractals_Screenshot.PNG"/>
+            <p style = "font-size: 25px">
+                This was another quick and fun project that utilized the Simple and Fast Multimedia Library (SFML) and recursion to draw triangles using recursion.
+                It should be noted that the length of each of the triangles sides get cut in half. An example with a depth of recursion of 4 can be seen above.
+                <a href = "https://github.com/PKC42/Triangle-Fractals.git">Click here to see the code repository.</a>
+            
+            </p>
+        
+        <h1 style = "font-size:50px">Evil Hangman (Summer 2021)</h1>
+            <img src = "Images/EvilHangman_Screenshot.PNG"/>
+            <p style = "font-size: 25px">
+                 Evil Hangman was a semester long project written in C conducted in Computing II Lab at UMass Lowell. In this project, a version of Evil Hangman
+                 was created that would make it nearly impossible for the player to guess the correct word. This is done by switching words as the user
+                 makes a guess. This would be accomplished by organizing key combinations into key families. As the user makes a guess, the largest key
+                 families would be selected giving the game a wider range of options to switch to thus thwarting the player. These keys were organized
+                 using a binary search tree. Although this project was ultimately only 90% complete, it was an incredibly educational experience as it
+                 was a good precurser to Computing III and Computing IV which involves object oriented programming. This project utlizes opaque objects and
+                 requires the user to essentially implement a vector in C using memory allocation functions. Furthurmore, I learned to use gdb and valgrind to
+                 diagnose memory leaks and segmentation faults.
+                 <a href = "https://github.com/PKC42/Evil-Hangman.git">Click here to see the code repository.</a>
+            </p>
+    </div>
+    
+</body>
+</html>
