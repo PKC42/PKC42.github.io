@@ -44,13 +44,12 @@
             <p style = "font-size: 25px">
                 SecureDrop was a project that was conducted during the Introduction to Computer Security course which I took in Fall 2022. My team 
                 consisted of 3 people (myself included). In this project, we designed a secure file transfer system using concepts we learned in class.
-                To do this, we hid passwords using password hashes and generated certificates and a certificate authority using EasyRSA. These certificates
-                along with the certifcate authority would be used to verify clients while also encrypting and transfering files using TCP and an SSL wrapper.
-                Ultimately, we were unsucessful in fully completing the program. This was due to our testing and development system which consisted of 
-                4 separate docker containers with a specific port exposed to simulate individual clients. We were unable to successfully create a TCP connection
-                with SSL wrappers using the generated certificates between these containers. The above shows user shows user registration and client addition
-                which utilizes json files as a database along with password hashing and regular expressions to ensure that the names, emails and passwords
-                are properly formatted and are of proper length. <a href = "https://github.com/PKC42/SecureDrop.git">Click here to see the code repository.</a>
+                To do this, we hid passwords using password hashes and generated certificates to be used for encryption during transmission. Additionally,
+                we utlized 3 extra threads to aid in functionality. Thread 1 (t1) would continuously listen for UDP packets from other peers while thread 2
+                would continuously send packets alerting other peers that the user is online. Thread 3 would continuously listen for TCP connections which
+                would be made by the sender who will use his or her self signed certificate to establish a connection using a secure socket layer (SSL) connection
+                allowing for safe data transmission. This program was tested on virtual machines. 
+                <a href = "https://github.com/PKC42/SecureDrop.git">Click here to see the code repository.</a>
             </p>
         <h1 style = "font-size:50px">EECE Capstone Project (Fall 2021 - Spring 2022)</h1>
             <p style = "font-size: 25px">
